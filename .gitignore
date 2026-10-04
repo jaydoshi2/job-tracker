@@ -1,0 +1,12 @@
+# LaTeX build junk (PDFs are kept on purpose)
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.toc
+__pycache__/
+.DS_Store
+.claude/settings.local.json
+*.preview.*
