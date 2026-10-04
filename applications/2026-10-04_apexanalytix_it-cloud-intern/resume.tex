@@ -1,0 +1,257 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{newtxtext,newtxmath}
+\usepackage{hyperref}  % already included in most resume templates
+\usepackage{ulem}  
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+% Page setup
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.9in}
+\addtolength{\textheight}{1.4in}
+
+% Settings
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-4pt}}}  % Reduced spacing
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textbf{\small #2} \\
+        \textit{\small#3} & \textit{\small #4}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+        \small#1 & \textbf{\small #2}
+    \end{tabular*}\vspace{-9pt}  % Reduced spacing
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+% List settings
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}  % Reduced spacing
+
+% Hyperlink settings
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\Huge \scshape Jay Doshi} \\ \vspace{6pt}  % Reduced spacing
+    
+    \small
+ \begin{tabular}{l @{\hspace{0.5cm}} l @{\hspace{0.5cm}} l  @{\hspace{0.5cm}} l}
+     \href{mailto:Jay.Doshi@rockets.utoledo.edu}{\uline{Jay.Doshi@rockets.utoledo.edu}} & 
+    LinkedIn: \href{https://www.linkedin.com/in/jaydoshi1234/}{\uline{jaydoshi1234}} & 
+    GitHub: \href{https://github.com/jaydoshi2}{\uline{jaydoshi2}} & 
+     +1 (419) 215-4693
+     
+\end{tabular}
+% \vspace{2pt}
+\end{center}
+\vspace{-0.7cm} % Adjust this value as needed to reduce space
+% Education
+% \vspace{2pt}
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubItem{
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{B.Sc. in Computer Science \& Engineering} & \textbf{GPA: 3.7/4.0} \\
+    University of Toledo, Toledo, Ohio & Expected Graduation: December 2027 \\
+  \end{tabular*}
+}
+
+% \vspace{6pt}
+% \resumeItem{
+%   \textbf{Relevant Coursework:} Database Systems, 
+%   Software Engineering, Operating Systems, Fundamentals of Cybersecurity
+% }
+
+\resumeSubHeadingListEnd
+
+
+
+\vspace{-0.6cm}
+\vspace{11pt}
+\section{Experience} 
+\resumeSubHeadingListStart
+
+
+\resumeSubheading
+{\textbf{Network Engineer Intern} \textnormal{\textbar\ Cenovus Energy, Oregon, OH}}{September 2026 -- December 2026}
+{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+\resumeItem{Integrated servers, VMware virtual environments, networking, and backup systems for reliable plant application availability.}
+\vspace{0.15cm}
+\resumeItem{Monitored network and server health in SolarWinds NPM, flagging performance degradation before it escalated into outages.}
+\vspace{0.15cm}
+\resumeItem{Collaborated with infrastructure, OT, and process-control engineers to troubleshoot connectivity and support production cutovers.}
+\vspace{0.15cm}
+\resumeItemListEnd
+
+\resumeSubheading
+{\textbf{Process Automation Intern} \textnormal{\textbar\ Cleveland-Cliffs, Coatesville, PA}}{May 2026 -- August 2026}
+{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+\resumeItem{Built ETL pipelines pulling live sensor data from legacy OpenVMS Alpha into SQL Server, cutting manual extraction by 40\%.}
+\vspace{0.15cm}
+\resumeItem{Engineered real-time email alerts comparing isotope gauge data to plate specs, reducing defective steel plate escapes by 30\%.}
+\vspace{0.15cm}
+\resumeItem{Deployed VB.NET microservices to a clustered QMS app, restoring TCP/IP data flow between PLCs and SQL Server in seconds.}
+\vspace{0.15cm}
+\resumeItemListEnd
+
+\resumeSubheading
+{\textbf{IT Support Technician} \textnormal{\textbar\ University of Toledo, Toledo, OH}}{September 2025 -- May 2026}
+{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+\resumeItem{Resolved 40+ monthly IT tickets by troubleshooting Windows, hardware, software, and network issues, minimizing downtime.}
+\vspace{0.15cm}
+\resumeItem{Imaged and deployed 150+ Windows devices using CLI tools for BIOS updates, data backups, and software installation.}
+\vspace{0.15cm}
+\resumeItem{Managed 200+ IT assets through inventory tracking, device deployment, secure decommissioning, and life-cycle documentation.}
+\vspace{0.15cm}
+\resumeItemListEnd
+
+\resumeSubheading
+{\textbf{Undergraduate Research Assistant} \textnormal{\textbar\ University of Toledo, Toledo, OH}}{May 2025 -- December 2025}
+{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+\resumeItem{Improved control accuracy by 60\% by analyzing telemetry from 15+ hardware trials in Python to isolate link and performance trends.}
+\vspace{0.15cm}
+\resumeItem{Scripted Linux CLI tools for data collection, system configuration, and test logging across hardware and simulation environments.}
+\vspace{0.15cm}
+\resumeItem{Reduced navigation error by 40\% by tuning a PID controller in a ROS2-Gazebo digital twin over DDS messaging.}
+% \vspace{0.15cm}
+% \resumeItem{Validated PX4 control logic by building a ROS2-Gazebo simulation linking flight controller and simulator over MAVLink/UDP.}
+% \vspace{0.15cm}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+\vspace{-0.6cm}
+\vspace{11pt}
+\section{Professional Projects}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{\textbf{Scalable Load Balancer} \textnormal{\textbar\ {Linux, HAProxy, Virtual Box, Apache, MariaDB, Tailscale, PHP}}}{August 2025 -- December 2025}
+{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+\resumeItem{Architected a high-availability three-node LAMP stack with HAProxy failover, sustaining 500+ users with zero downtime.}
+\vspace{0.15cm}
+\resumeItem{Automated rsync and database export/restore pipelines, cutting recovery time to under 5 minutes.}
+\vspace{0.15cm}
+\resumeItem{Engineered HAProxy routing and per-IP rate limiting, capping traffic at 200 req/sec while blocking abusive bursts.}
+\vspace{0.15cm}
+\resumeItem{Implemented encrypted Tailscale mesh networking to eliminate public exposure and enforce authenticated node access.}
+\vspace{0.15cm}
+\resumeItemListEnd
+
+\resumeSubheading
+{\textbf{PulseChat Application} \textnormal{\textbar\ {Docker, AWS EC2, Java Spring Boot, WebSocket, MongoDB}}}{January 2024 -- August 2024}
+{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+\resumeItem{Containerized the Spring Boot and MongoDB stack with Docker Compose for scalable, reproducible builds and deployments.}
+\vspace{0.15cm}
+\resumeItem{Deployed application on AWS EC2, achieving reliable uptime and public access for live department-wide adoption.}
+\vspace{0.15cm}
+\resumeItem{Developed a real-time messaging platform using Spring Boot and WebSocket (STOMP), serving 300+ university students.}
+% \vspace{0.15cm}
+\resumeItemListEnd
+
+\resumeSubheading
+{\textbf{DeepTruth} \textnormal{\textbar\ {GCP, AWS, Python, PyTorch, DistilBERT, Gemini API, React, MongoDB}}}{January 2025 -- March 2025}
+{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+\resumeItem{Automated CI/CD deployment via GitHub Actions and GCP VMs, reducing manual release steps and improving consistency.}
+\vspace{0.15cm}
+\resumeItem{Designed AWS Lambda and CloudWatch cron workflows for scheduled Transformer retraining and ML lifecycle management.}
+\vspace{0.15cm}
+\resumeItem{Built Python ETL pipeline with automated validation checks, improving data ingestion accuracy across 9,500+ records.}
+\vspace{0.15cm}
+\resumeItem{Won RocketHacks 2025 for developing a scalable AI fact-checking product used by 1,000+ users over a 6-month period.}
+\vspace{0.15cm}
+% \resumeItem{Fine-tuned DistilBERT on 9.5K+ labeled records, enabling dual-model scoring with 70\% Gemini and 30\% BERT weighting.}
+% \vspace{0.15cm}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-0.6cm}
+\vspace{11pt}
+\section{Technical Skills}
+\resumeSubHeadingListStart
+\resumeSubItem{\textbf{Systems, Virtualization \& Cloud}{: Linux CLI, VMware, Virtual Box, Docker, Kubernetes, AWS (EC2, Lambda, S3, CloudWatch), GCP, Microsoft Azure}}
+\vspace{4pt} 
+\resumeSubItem{\textbf{Scripting \& Automation}{: Bash Scripting, Python, Powershell Scripting, SQL, C++, C, Java, JavaScript, GitHub Actions (CI/CD)}}
+\vspace{4pt}
+\resumeSubItem{\textbf{Networking \& Monitoring}{: TCP/IP, DNS, DHCP, VLANs, ACLs, NAT, STP, Layer 2/3 Networking, OSI model, Cisco Switching \& Routing, SolarWinds NPM}}
+\vspace{4pt}
+\resumeSubItem{\textbf{Databases}{: MySQL, PostgreSQL, MariaDB, MongoDB, DynamoDB, AzureDB, Firebase}}
+\vspace{4pt}
+% \resumeSubItem{\textbf{Software Development}{: System Design, Data Structures \& Algorithms, REST APIs, Agile/SCRUM, CI/CD, Unit Testing}}
+% \vspace{4pt}
+\resumeSubItem{\textbf{Tools \& Practices}{: Git, WSL, Documentation, Agile/SCRUM, Power BI Dashboards, Pandas, NumPy, Tableau, MATLAB}}
+\resumeSubHeadingListEnd
+
+\end{document}
