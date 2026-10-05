@@ -1,0 +1,30 @@
+{"title": "Software Test Engineering Intern",
+ "required": [
+  {"term": "Software testing", "aliases": ["testing", "tested", "test cases", "test plans"]},
+  {"term": "Automated testing", "aliases": ["test automation", "automated validation", "automated tests"]},
+  {"term": "Functional testing", "aliases": ["functional tests"]},
+  {"term": "Regression testing", "aliases": ["regression tests"]},
+  {"term": "Performance testing", "aliases": ["stress-tested", "stress testing", "load testing", "benchmarked"]},
+  {"term": "Reliability", "aliases": ["reliable", "high availability", "failover"]},
+  {"term": "Defect triage", "aliases": ["defects", "defect", "triaging", "triage", "root-cause analysis"]},
+  {"term": "Troubleshooting", "aliases": ["troubleshot", "troubleshooting", "troubleshoot"]},
+  {"term": "Debugging", "aliases": ["debug", "debugged"]},
+  {"term": "Python", "aliases": ["Python3"]},
+  {"term": "C++", "aliases": []},
+  {"term": "Linux", "aliases": ["Linux CLI", "Linux Command Line"]},
+  {"term": "Windows", "aliases": ["Windows 10", "Windows 11"]},
+  {"term": "PC configuration", "aliases": ["BIOS", "imaged", "hardware"]},
+  {"term": "Quality assurance", "aliases": ["QA", "software quality", "QMS"]}
+ ],
+ "preferred": [
+  {"term": "Selenium", "aliases": []},
+  {"term": "VBA", "aliases": ["Visual Basic"]},
+  {"term": "Databases", "aliases": ["SQL", "SQL Server", "PostgreSQL", "MySQL"]},
+  {"term": "Reporting tools", "aliases": ["Power BI", "Tableau", "Excel"]},
+  {"term": "GPU", "aliases": ["dGPU", "APU", "graphics"]},
+  {"term": "Unit testing", "aliases": ["unit tests"]},
+  {"term": "CI/CD", "aliases": ["GitHub Actions"]},
+  {"term": "Usability testing", "aliases": ["user testing", "end-user testing"]},
+  {"term": "Negative testing", "aliases": []},
+  {"term": "Metrics", "aliases": ["measurements", "metrics"]}
+ ]}
