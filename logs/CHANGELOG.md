@@ -6,3 +6,4 @@ One line per application. Per-bullet details are in each application's changes.m
 - 2026-10-04 · Under Armour — AI Automation Rookie · ai · ATS 93→98 · 15 bullets edited · applications/2026-10-04_under-armour_ai-automation-rookie
 - 2026-10-04 · GDIT — AI/ML Software Development and Engineering Intern · ai · ATS 77→92 · 17 bullets edited · applications/2026-10-04_gdit_ai-ml-software-development-and-engineeri
 - 2026-10-05 · AMD — Software Test Engineering Intern · software · ATS 80→83 · 14 bullets edited · applications/2026-10-05_amd_software-test-engineering-intern
+- 2026-10-05 · Amgen — Machine Learning Engineer Intern · ai · ATS 86→96 · 14 bullets edited · applications/2026-10-05_amgen_machine-learning-engineer-intern
