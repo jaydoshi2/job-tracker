@@ -84,7 +84,7 @@ files, fix these once:
 
 - Cleveland-Cliffs title: "Process Automation Intern" vs "Data Processing Engineer Intern".
   Use your official title in all four (background checks verify titles).
-- Cenovus end date: "Present" vs "December 2026".
+- Cenovus end date: "Present" vs "Present".
 - SportsSight dates: Jan–Apr 2025 vs Aug–Dec 2024.
 - DeepTruth: "1,000+ users" vs "tested with 50+ users"; "Won RocketHacks" vs
   "1st place, Best Use of MongoDB" (a category win isn't the overall win).

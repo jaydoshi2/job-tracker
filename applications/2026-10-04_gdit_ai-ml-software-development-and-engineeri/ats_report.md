@@ -15,4 +15,4 @@
 
 ## Fix in your files
 - SkillBridge microservices bullet exists only in resume_software; ETL validation bullet for DeepTruth only in resume_network. Consider adding both to the AI master.
-- Same conflicts as before: Cenovus end date (Present vs December 2026); Cleveland-Cliffs title differs across 3 files; anomaly tool "classification-based" vs "threshold-based".
+- Same conflicts as before: Cenovus end date (Present vs Present); Cleveland-Cliffs title differs across 3 files; anomaly tool "classification-based" vs "threshold-based".

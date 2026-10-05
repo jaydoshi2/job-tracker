@@ -10,7 +10,7 @@
 - The JD names no specific tools. Expect questions on RPA/low-code tools (Power Automate, UiPath, Zapier), which aren't in your files.
 
 ## Fix in your files
-- Cenovus end date: "Present" (resume_ai) vs "December 2026" (resume_network).
+- Cenovus end date: "Present" (resume_ai) vs "Present" (resume_network).
 - Cleveland-Cliffs title: "Data Processing Engineer Intern" (resume_ai) vs "Process Automation Intern" (resume_network) vs "Process Control Engineer Intern" (resume.tex).
 - Cleveland-Cliffs anomaly tool: "classification-based" (resume_ai) vs "threshold-based" (resume_network).
 - SportsSight dates: January–April 2025 (active block) vs August–December 2024 (commented block in resume_ai).
