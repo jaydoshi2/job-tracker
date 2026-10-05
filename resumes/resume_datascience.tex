@@ -1,0 +1,268 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{newtxtext,newtxmath}
+\usepackage{hyperref}
+\usepackage{ulem}  
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+% Page setup
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.9in}
+\addtolength{\textheight}{1.4in}
+
+% Settings
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-4pt}}}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textbf{\small #2} \\
+        \textit{\small#3} & \textit{\small #4}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+        \small#1 & \textbf{\small #2}
+    \end{tabular*}\vspace{-9pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+% List settings
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+
+% Hyperlink settings
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\Huge \scshape Jay Doshi} \\ \vspace{3pt}
+    
+    \small
+ \begin{tabular}{l @{\hspace{0.5cm}} l @{\hspace{0.5cm}} l  @{\hspace{0.5cm}} l}
+     \href{mailto:Jay.Doshi@rockets.utoledo.edu}{\uline{Jay.Doshi@rockets.utoledo.edu}} & 
+    LinkedIn: \href{https://www.linkedin.com/in/jaydoshi1234/}{\uline{jaydoshi1234}} & 
+    GitHub: \href{https://github.com/jaydoshi2}{\uline{jaydoshi2}} & 
+     +1 (419) 215-4693
+     
+\end{tabular}
+\end{center}
+\vspace{-0.7cm}
+
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubItem{
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{B.Sc. in Computer Science \& Engineering} & \textbf{GPA: 3.7/4.0} \\
+    University of Toledo, Toledo, OH & Expected Graduation: December 2027 \\
+  \end{tabular*}
+}
+
+\resumeSubHeadingListEnd
+
+
+
+\vspace{-0.4cm}
+\vspace{3pt}
+\section{Experience} 
+\resumeSubHeadingListStart
+
+
+\resumeSubheading
+{\textbf{Network Engineer Intern} \textnormal{\textbar\ Cenovus Energy, Oregon, OH}}{September 2026 -- December 2026}
+{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+% \resumeItem{Collaborated with infrastructure, OT, and process-control engineers to validate system integrations, troubleshoot cross-domain connectivity issues, and support production cutovers with minimal disruption.}
+% \vspace{0.15cm}
+\resumeItem{Monitored network and server health through SolarWinds NPM, identifying performance degradation and connectivity issues across production infrastructure before they escalated into larger outages.}
+\vspace{0.15cm}
+\resumeItem{Integrated server infrastructure, VMware virtual environments, setting up VNC connection for networking, and backup systems to support reliable compute and application availability for plant operations.}
+\vspace{0.15cm}
+\resumeItemListEnd
+
+\resumeSubheading
+{\textbf{Data Processing Engineer Intern} \textnormal{\textbar\ Cleveland-Cliffs, Coatesville, PA}}{May 2026 -- August 2026}
+{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+
+\resumeItem{Developed ETL pipelines to extract and engineer features from live sensor data (legacy OpenVMS Alpha OS) into SQL server, automating data ingestion and reporting to reduce manual extraction effort by 40\%.}
+
+\vspace{0.15cm}
+
+\resumeItem{Engineered a classification-based anomaly detection tool analyzing live gauge data, reducing defective steel plate escapes by 30\%.}
+\vspace{0.15cm}
+
+
+\resumeItem{Built Power BI semantic models on SQL Server views, defining table relationships in a star schema and validating report totals against source tables, which accelerated engineering and business decisions by 50\%.}
+
+\vspace{0.15cm}
+\resumeItemListEnd
+\resumeSubheading
+{\textbf{IT Support Technician Level 2} \textnormal{\textbar\ University of Toledo, Toledo, OH}}{September 2025 -- May 2026}
+{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+
+\resumeItem{Resolved 40+ monthly IT tickets by troubleshooting Windows, hardware, software, and network issues, minimizing downtime.}
+% \vspace{0.15cm}
+% \resumeItem{Imaged and deployed 150+ Windows devices using CLI tools for BIOS updates, data backups, and software installation.}
+
+\vspace{0.15cm}
+\resumeItem{Managed 200+ IT assets through inventory tracking, device deployment, secure decommissioning, and life-cycle documentation.}
+
+\vspace{0.15cm}
+
+\resumeItemListEnd
+
+\resumeSubheading
+{\textbf{Undergraduate Research Assistant} \textnormal{\textbar\ University of Toledo, Toledo, OH}}{May 2025 -- December 2025}
+{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+\resumeItem{Reduced target navigation error by 40\% by systematically analyzing setpoint and response curves in QGroundControl and PX4 Flight Review, iteratively tuning PID gains until the response closely tracked the commanded setpoint.}
+\vspace{0.15cm}
+\resumeItem{Developed ROS2-Gazebo simulation pipeline to validate PX4 control logic on a digital twin in a physics virtual environment.}
+\vspace{0.15cm}
+\resumeItem{Improved control-logic accuracy by 60\% by quantifying tracking performance with Pandas, NumPy, and Matplotlib, computing error metrics such as RMSE and overshoot to identify performance trends across trials.}
+% \vspace{0.15cm}
+% \resumeItem{Assembled and configured Holybro X500 drone hardware, supporting PX4-based feedback data collection and analysis.}
+% \vspace{0.15cm}
+\resumeItemListEnd
+
+% \resumeSubheading
+% {\textbf{Vice President} \textnormal{\textbar\ Toledo Codes Student Organization}}{May 2025 -- December 2025}
+% {}{}
+% \vspace{-0.6cm}
+% \resumeItemListStart
+% \resumeItem{Reduced trashcan overflow by 70\% and increased community awareness through City TV News and newspapers by leading a civic tech project to define QR-based data collection requirements for city trash reports.}
+% \vspace{0.15cm}
+% \resumeItem{Accelerated professional software development pathways for 150+ mixed-experience students by organizing 6+ Toledo Codes technical workshops and mentorship programs teaching foundational AI and programming concepts.}
+% \resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+
+\vspace{-0.4cm}
+\vspace{3pt}
+
+\section{Professional Projects}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{\textbf{DeepTruth-AI} \textnormal{\textbar\ {Python, PyTorch, DistilBERT, Gemini API, React, MongoDB, GCP, AWS }}}{January 2025 -- March 2025}{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+
+\resumeItem{Fine-tuned DistilBERT on 9.5K+ labeled records, enabling dual-model scoring with 70\% Gemini and 30\% BERT weighting.}
+\vspace{0.15cm}
+\resumeItem{Built Python ETL pipeline with automated validation checks, improving data ingestion accuracy across 9,500+ records.}
+\vspace{0.15cm}
+\resumeItem{Automated CI/CD deployment via GitHub Actions and GCP VMs, reducing manual release steps and improving consistency.}
+\vspace{0.15cm}
+\resumeItem{Designed AWS Lambda and CloudWatch cron workflows for scheduled Transformer retraining and ML lifecycle management.}
+\vspace{0.15cm}
+\resumeItem{Won RocketHacks 2025 for developing scalable AI fact-checking product which processed data of 1000+ users during  6 months.}
+\vspace{0.15cm}
+\resumeItemListEnd
+
+\resumeSubheading
+{\textbf{SportsSight Analytics} \textnormal{\textbar\ {Python, YOLOv8, OpenCV, K-Means, NumPy, Matplotlib}}}{August 2024 -- December 2024}{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+\resumeItem{Fine-tuned YOLOv8 on Roboflow football dataset, achieving 90\% player and ball detection accuracy on test video clips.}
+\vspace{0.15cm}
+\resumeItem{Applied K-Means pixel clustering for automated team assignment by t-shirt color, improving segmentation accuracy to 75\%.}
+\vspace{0.15cm}
+\resumeItem{Implemented optical flow and perspective transformation to compute real-world player speed and distance in meters.}
+\vspace{0.15cm}
+\resumeItem{Generated real-time match analytics on ball possession and movement patterns to support data-driven sports insights.}
+\vspace{0.15cm}
+\resumeItemListEnd
+
+\resumeSubheading
+{\textbf{SkillBridge Learning Platform} \textnormal{\textbar\ {Django, PostgreSQL, TF-IDF, NLP, AWS}}}{August 2024 -- December 2024}{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+
+\resumeItem{Built NLP-based recommendation engine using TF-IDF and cosine similarity, achieving 95\% prediction accuracy in testing.}
+\vspace{0.15cm}
+\resumeItem{Developed Gemini API-powered AI agent for auto-generating video transcripts and MCQs, reducing manual content creation effort.}
+\vspace{0.15cm}
+\resumeItem{Designed PostgreSQL schemas with fact and dimensional modeling, improving query performance and reporting speed by 80\%.}
+\vspace{0.15cm}
+\resumeItem{Implemented JWT and Google OAuth authentication system, securing API endpoints and improving integration reliability.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-0.4cm}
+\vspace{3pt}
+\section{Technical Skills}
+\resumeSubHeadingListStart
+\resumeSubItem{\textbf{Programming Languages \& Frameworks}{: Python, C++, C, Java, JavaScript, R, SQL, React, Django}}
+\vspace{4pt}
+\resumeSubItem{\textbf{AI \& Machine Learning}{: Supervised/Unsupervised Learning, Computer Vision, NLP, LLM, MCP, Langchain, Transformer Models, Reinforcement Learning, Fine-Tuning, Model Evaluation, Distributed Training, MLOps, Deep Learning, Agentic-AI Workflow}}
+\vspace{4pt}
+\resumeSubItem{\textbf{Data \& Visualization}{: Pandas, NumPy, Matplotlib, Power BI Dashboards, Tableau}}
+\vspace{4pt}
+\resumeSubItem{\textbf{Databases \& Cloud}{: PostgreSQL, MySQL, MongoDB, Firebase, AWS (Lambda, S3), Google Cloud Platform, Microsoft Azure}}
+\vspace{4pt}
+\resumeSubItem{\textbf{Developer Tools}{: Git, Linux Command Line, Jupyter Notebook, VS Code, MATLAB}}
+\resumeSubHeadingListEnd
+
+\end{document}

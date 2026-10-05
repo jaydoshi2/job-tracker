@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 scripts/ats_score.py:*)",
+      "Bash(python3 scripts/tracker.py:*)",
+      "Bash(python3 scripts/new_application.py:*)",
+      "Bash(python3 scripts/build_resume.py:*)",
+      "Bash(python3 scripts/preview_build.py:*)",
+      "Bash(python3 scripts/lint_bullets.py:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push)",
+      "Bash(git status)",
+      "Bash(git log:*)",
+      "WebFetch"
+    ],
+    "deny": [
+      "Bash(git push --force:*)",
+      "Bash(rm -rf:*)"
+    ]
+  }
+}

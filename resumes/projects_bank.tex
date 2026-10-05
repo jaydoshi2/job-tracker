@@ -1,0 +1,282 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{newtxtext,newtxmath}
+\usepackage{hyperref}  % already included in most resume templates
+\usepackage{ulem}  
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+% Page setup
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.9in}
+\addtolength{\textheight}{1.4in}
+
+% Settings
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-4pt}}}  % Reduced spacing
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textbf{\small #2} \\
+        \textit{\small#3} & \textit{\small #4}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+        \small#1 & \textbf{\small #2}
+    \end{tabular*}\vspace{-9pt}  % Reduced spacing
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+% List settings
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}  % Reduced spacing
+
+% Hyperlink settings
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\begin{document}
+
+                                                                                +% Header
+\begin{center}
+    {\Huge \scshape Jay D Doshi} \\ \vspace{3pt}  % Reduced spacing
+    
+    \small
+ \begin{tabular}{l @{\hspace{0.5cm}} l @{\hspace{0.5cm}} l  @{\hspace{0.5cm}} l}
+     \href{mailto:Jay.Doshi@rockets.utoledo.edu}{\uline{Jay.Doshi@rockets.utoledo.edu}} & 
+    LinkedIn: \href{https://www.linkedin.com/in/jaydoshi1234/}{\uline{jaydoshi1234}} & 
+    GitHub: \href{https://github.com/jaydoshi2}{\uline{jaydoshi2}} & 
+     +1 (419) 215-4693
+     
+\end{tabular}
+% \vspace{2pt}
+\end{center}
+\vspace{-0.7cm} % Adjust this value as needed to reduce space
+% Education
+% \vspace{2pt}
+% \resumeSubItem{\textbf{B.E. in Information Technology}, LJ University \hfill \textbf{Nov 2022 – Oct 2024 | CGPA: 7.9/10.0}}
+
+\section{Professional Projects}
+\resumeSubHeadingListStart
+
+% \resumeSubheading
+% {\textbf{DeepTruth-AI} \textnormal{ \textbar\ {Linux, React.Js, Django, Hugging Face, AWS, GCP, MongoDB}}}{January 2025 -- March 2025}{}{}
+% \vspace{-0.6cm}
+% \resumeItemListStart
+
+% \resumeItem{Built a Python data ingestion pipeline for 9.5K+ records, improving dataset quality through automated validation checks.}
+% \vspace{0.15cm}
+% \resumeItem{Automated backend deployment with GitHub Actions and GCP VMs, improving reproducibility and release consistency.}
+% \vspace{0.15cm}
+% \resumeItem{Designed ETL workflows with AWS Lambda and CloudWatch to support scheduled retraining and reusable ML operations.}
+% \vspace{0.15cm}
+% \resumeItem{Won RocketHacks 2025 among 120+ participants for building an efficient data validation and storage workflow.}
+% \vspace{0.15cm}
+% \resumeItemListEnd
+
+\resumeSubheading
+{\textbf{Group Chat Application} \textnormal{\textbar\ {Java Spring Boot, WebSocket (STOMP), MongoDB, Docker, AWS EC2}}}{Month Year -- Month Year}{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+
+\resumeItem{Engineered a real-time group chat platform using Spring Boot and WebSocket (STOMP protocol), enabling instant bidirectional messaging for 200+ concurrent university students.}
+\vspace{0.15cm}
+\resumeItem{Architected message persistence layer with MongoDB and Spring Data repositories, retaining full chat history and auto-loading prior conversations on user join.}
+\vspace{0.15cm}
+\resumeItem{Containerized the application stack using Docker and Docker Compose, orchestrating multi-service deployment (Spring Boot app + MongoDB) with isolated networking for consistent, reproducible builds.}
+\vspace{0.15cm}
+\resumeItem{Deployed and hosted the application on an AWS EC2 instance, achieving 24/7 uptime and public accessibility for a live user base without downtime-related incidents.}
+\vspace{0.15cm}
+\resumeItem{Designed event-driven join/leave notification system via WebSocket broadcast channels, improving real-time session awareness across all active chat participants.}
+\resumeItemListEnd
+\resumeSubheading
+{\textbf{SkillBridge Learning Platform} \textnormal{\textbar\ {Django, Prisma ORM, AWS S3, PostgreSQL}}}{August 2024 -- December 2024}{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+
+\resumeItem{Designed relational schemas with fact and dimensional modeling, improving query performance and reporting speed by 80\%.}
+\vspace{0.15cm}
+\resumeItem{Built Dockerized services and AWS S3-backed storage to support reliable data access and deployment workflows.}
+\vspace{0.15cm}
+\resumeItem{Developed Python-based transformation logic for recommendation outputs, achieving 95\% prediction accuracy in testing.}
+\vspace{0.15cm}
+\resumeItem{Created secure API workflows with JWT and OAuth, improving integration reliability and application maintainability.}
+\vspace{0.15cm}
+\resumeItemListEnd
+
+\resumeSubheading
+{\textbf{DeepTruth-AI} \textnormal{ \textbar\ {Linux, React.Js, Django, Hugging Face, AWS, GCP, MongoDB}}}{\href{https://github.com/TheChozenWon/DeepTruth}{\textbf{Github Link}}}{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+
+\resumeItem{Fine-tuned DistilBERT on 9.5K+ samples; integrated Brave Search API with Gemini validation for semantic accuracy.}
+\vspace{0.15cm}
+\resumeItem{Deployed frontend via AWS Amplify (GoDaddy DNS) and backend on GCP VM; tested the application with 50+ users.}
+\vspace{0.15cm}
+\resumeItem{Automated server updates with GitHub Actions; scheduled model retraining on AWS Lambda/CloudWatch, boosting accuracy 30\%.}
+\vspace{0.15cm}
+\resumeItem{Secured 1\textsuperscript{st} place out of 120+ participants in RocketHacks 2025 Hackathon  for Best Use of MongoDB.}
+\vspace{0.15cm}
+\resumeItem{Earned \textbf{AWS Cloud Tech Essentials} (Feb 2025) \href{https://coursera.org/share/f80f4d7fd5fcb0f5236ace28a4cb150e}{\textbf{[Coursera Link]}}; applied cloud deployment and scaling knowledge.}
+\vspace{0.15cm}
+\resumeItemListEnd
+
+\resumeSubheading
+{\textbf{Smart Obstacle Avoidance Vehicle} \textnormal{ \textbar\ {IoT - Arduino UNO, Embedded Systems, C++, TinkerCAD}}}{\href{https://github.com/jaydoshi2/Multifunctional-Car}{\textbf{Github Link}}}{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+
+\resumeItem{Developed embedded C++ software with ultrasonic sensors \& servo motors for real-time obstacle detection and navigation.}
+\vspace{0.15cm}
+\resumeItem{Integrated Bluetooth controls, reducing command response latency by ~60\% and enabling near real-time mobile operation.}
+\vspace{0.15cm}
+\resumeItem{Designed \& tested modular architecture with L293D driver, ensuring reliable integration and smooth motor control.}
+\vspace{0.15cm}
+\resumeItem{Implemented speed \& distance tracking via IR sensor + rotating grid plate, achieving 85\% measurement accuracy.}
+\vspace{0.15cm}
+\resumeItem{Utilized TinkerCAD for 3D modeling/printing of base \& joints, ensuring structural stability and precise alignment.}
+\vspace{0.15cm}
+
+\resumeItemListEnd
+\resumeSubheading
+{\textbf{Multi-Agent Robotics Simulation} \textnormal{ \textbar\ {ROS 2 Humble, Gazebo Harmonic, PX4-Autopilot, Rviz2}}}{\href{https://drive.google.com/file/d/1bPplS02fVyUdbXHt5O5HKTHXEb6Ez2jG/view?usp=sharing}{\textbf{Github Link}}}{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+
+\resumeItem{Engineered a high-fidelity simulation pipeline using Gazebo Harmonic to test robotic controller logic in complex environments.}
+\vspace{0.15cm}
+\resumeItem{Implemented multi-user/multi-agent communication protocols, allowing for synchronized control and real-time data feedback.}
+\vspace{0.15cm}
+\resumeItem{Optimized collision physics and dynamics for realistic interaction, ensuring 95\%+ parity between simulation and physical hardware.}
+\vspace{0.15cm}
+\resumeItemListEnd
+
+\resumeSubheading
+{\textbf{Sports Sight Analytics-AI} \textnormal{\textbar\ {Machine Learning, Computer Vision, YOLO, OpenCV, NumPy, Matplotlib}}}{\href{https://github.com/TheChozenWon/DeepTruth}{\textbf{Github Link}}}{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+\resumeItem{Achieved 90\%+ accuracy in detecting and tracking football players, referees, and balls by training YOLOv5 model.}
+\vspace{0.15cm}
+\resumeItem{Delivered real-time analytics (ball possession, player movement, speed etc) advancing automated sports insights for coaching.}
+
+\vspace{0.15cm}
+\resumeItem{Completed \textbf{Data Analysis and ML} (IBM, Aug 2024) \href{https://coursera.org/share/e0772282ad73701c52a2730f35da4e31}{\textbf{[Coursera Link]}}; applied ML and data analysis techniques in practice.}
+\vspace{0.15cm}
+% \resumeItem{Delivered real-time analytics (ball possession, player movement), advancing automated sports insights for coaching and broadcasting.}
+\resumeItemListEnd
+
+\resumeSubheading
+{\textbf{BCD to 7-Segment Decoder} \textnormal{\textbar\ {Digital Logic, Boolean Algebra, IC 7447, KiCad, Circuit Design}}}{\href{https://github.com/}{\textbf{Github Link}}}{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+\resumeItem{Built a BCD-to-7-segment decoder using IC 7447, translating 4-bit inputs into accurate outputs on a single 7-segment display through combinational logic design.}
+\vspace{0.15cm}
+\resumeItem{Simulated the circuit in KiCad before hardware implementation, verified 8 input states (0--7), and cut debugging time by 60\% while improving hands-on circuit design skills.
+\vspace{0.15cm}
+}
+\resumeItemListEnd
+
+\resumeSubheading
+{\textbf{Automatic Street Light (LDR-Based)} \textnormal{\textbar\ {Circuit Design, LDR, Soldering, Embedded Electronics}}}{\textbf{Course Project}}{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+\resumeItem{Engineered an automatic light-dark sensing circuit using a 2N2222A transistor, LDR, and 1k\(\Omega\) resistor to autonomously switch an LED on/off based on ambient light levels, eliminating manual control entirely.}
+\vspace{0.15cm}
+\resumeItem{Soldered and assembled all components onto a physical circuit board, leveraging transistor base-voltage switching logic to achieve fast-response, low-power operation at under 5V supply.}
+\vspace{0.15cm}
+
+\resumeItemListEnd
+
+
+\resumeSubheading
+{\textbf{Cloud-Native Load Balancer System} \textnormal{ \textbar\ {HAProxy, Docker, TCP/IP, Linux, VirtualBox, Apache}}}{August 2025 -- December 2025}{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+\resumeItem{Architected a distributed LAMP-based system with reverse proxy and failover support for high availability.}
+\vspace{0.15cm}
+\resumeItem{Implemented Layer 4 \& Layer 7 load balancing, optimizing request routing under high traffic conditions.}
+\vspace{0.15cm}
+% \resumeItem{Stress-tested system to handle 500+ concurrent users with zero service degradation.}
+% \vspace{0.15cm}
+\resumeItem{Configured rate limiting and stress handling for 500+ concurrent users to prevent overload and mitigate malicious burst traffic.}
+\vspace{0.15cm}
+\resumeItem{Secured inter-node communication using private networking (Tailscale) and automated data sync via rsync pipelines.}
+\vspace{0.15cm}
+\resumeItemListEnd
+
+
+% \resumeSubHeadingListEnd
+\resumeSubheading
+{\textbf{Web Memory Assistant} \textnormal{ \textbar\ {FastAPI, Manifest V3, SQLite, Pinecone, Groq, Hugging Face}}}{August 2025 -- December 2025}{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+\resumeItem{Architected a local-first browser memory system with a Manifest V3 extension and FastAPI backend to capture, summarize, and semantically index web pages for instant recall.}
+\vspace{0.15cm}
+\resumeItem{Built a text-chunking pipeline splitting captured pages (up to 12{,}000 characters) into 400-word segments with 50-word overlap, embedding each into 384-dimensional vectors indexed in Pinecone for semantic search.}
+\vspace{0.15cm}
+\resumeItem{Reduced noisy captures and backend load by filtering low-value pages via a 100-word extension threshold and 50-word API threshold, while automating tagging through Groq-powered summarization.}
+\vspace{0.15cm}
+\resumeItemListEnd
+
+\resumeSubheading
+{\textbf{MCP Chatbot} \textnormal{ \textbar\ {FastAPI, Streamlit, Ollama, Model Context Protocol, GitHub OAuth}}}{August 2025 -- December 2025}{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+\resumeItem{Developed a local LLM chat application integrating Ollama models with the Model Context Protocol to enable dynamic tool discovery and multi-step, agentic tool-calling conversations.}
+\vspace{0.15cm}
+\resumeItem{Designed a tool-calling loop supporting up to 10 iterations per query across 4 built-in MCP tool categories (calculator, notes, tasks, unit conversion), extensible via an optional GitHub MCP server for repository operations.}
+\vspace{0.15cm}
+\resumeItem{Implemented GitHub OAuth authentication and session management alongside a Streamlit dashboard exposing 10 REST endpoints for chat, tool discovery, model switching, and server monitoring.}
+\vspace{0.15cm}
+\resumeItemListEnd
+
+
+\end{document}  
