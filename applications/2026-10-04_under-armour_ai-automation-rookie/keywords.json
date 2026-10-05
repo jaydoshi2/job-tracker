@@ -1,0 +1,27 @@
+{"title": "AI Automation",
+ "required": [
+  {"term": "Artificial intelligence", "aliases": ["AI"]},
+  {"term": "Automation", "aliases": ["automated", "automating", "automate"]},
+  {"term": "Workflow automation", "aliases": ["workflows", "workflow"]},
+  {"term": "Python", "aliases": ["Python3"]},
+  {"term": "LLM", "aliases": ["LLMs", "large language models", "GPT-4o", "Gemini"]},
+  {"term": "AI agents", "aliases": ["AI agent", "agentic", "Agentic-AI"]},
+  {"term": "Machine learning", "aliases": ["ML"]},
+  {"term": "Manual effort reduction", "aliases": ["manual effort", "manual extraction", "reducing manual"]},
+  {"term": "Testing", "aliases": ["tested", "benchmarked", "evaluated"]},
+  {"term": "Implementation", "aliases": ["implemented", "deployed"]},
+  {"term": "Data analysis", "aliases": ["analytics", "analyzed", "analysis"]},
+  {"term": "SQL", "aliases": []}
+ ],
+ "preferred": [
+  {"term": "RAG", "aliases": ["retrieval-augmented generation"]},
+  {"term": "MCP", "aliases": ["Model Context Protocol"]},
+  {"term": "Power BI", "aliases": ["dashboards"]},
+  {"term": "ETL", "aliases": ["data pipelines"]},
+  {"term": "REST APIs", "aliases": ["API", "APIs", "FastAPI"]},
+  {"term": "NLP", "aliases": ["natural language processing"]},
+  {"term": "LangChain", "aliases": []},
+  {"term": "Cloud", "aliases": ["AWS", "GCP", "Google Cloud Platform"]},
+  {"term": "Decision-making", "aliases": ["decisions"]},
+  {"term": "Process improvement", "aliases": ["streamline", "efficiency"]}
+ ]}
