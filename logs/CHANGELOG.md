@@ -9,3 +9,4 @@ One line per application. Per-bullet details are in each application's changes.m
 - 2026-10-05 · Amgen — Machine Learning Engineer Intern · ai · ATS 86→96 · 14 bullets edited · applications/2026-10-05_amgen_machine-learning-engineer-intern
 - 2026-10-06 · Kensho — Machine Learning Engineer Intern · ai · ATS 90→94 · 16 bullets edited · applications/2026-10-06_kensho_machine-learning-engineer-intern
 - 2026-10-06 · DoorDash — Machine Learning Engineer Intern · ai · ATS 77→77 · 15 bullets changed
+- 2026-10-06 · DoorDash — Machine Learning Engineer Intern · ai · ATS 86→86 · 8 bullets edited · applications/2026-10-06_doordash_machine-learning-engineer-intern (re-run; replaces 77→77 entry above, which had no folder)
