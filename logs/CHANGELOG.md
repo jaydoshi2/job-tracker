@@ -11,3 +11,4 @@ One line per application. Per-bullet details are in each application's changes.m
 - 2026-10-06 · DoorDash — Machine Learning Engineer Intern · ai · ATS 77→77 · 15 bullets changed
 - 2026-10-06 · DoorDash — Machine Learning Engineer Intern · ai · ATS 86→86 · 8 bullets edited · applications/2026-10-06_doordash_machine-learning-engineer-intern (re-run; replaces 77→77 entry above, which had no folder)
 - 2026-10-07 · Sigma Computing — Software Engineering Intern · software · ATS 88→96 · 10 bullets edited · applications/2026-10-07_sigma-computing_software-engineering-intern
+- 2026-10-07 · Kensho — Machine Learning Engineer Intern · ai · ATS 94→94 · revision 2: 6 bullets edited, MCP Chatbot restored · applications/2026-10-06_kensho_machine-learning-engineer-intern

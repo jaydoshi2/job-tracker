@@ -14,3 +14,10 @@
 ## Fix in your files
 - Web Memory Assistant and MCP Chatbot both list "August 2025 -- December 2025" in projects_bank (same as the load balancer project). Confirm these dates.
 - No new conflicts beyond the ones already listed (SportsSight dates, TensorFlow on SportsSight, Cenovus end date in resume_datascience, Cleveland-Cliffs title).
+
+---
+
+## Revision 2 (2026-10-07)
+- **ATS:** 94 → 94 (required 15/15). Score ceiling is the preferred tools you don't have (Pydantic AI, scikit-learn, Airflow, W&B).
+- Gains are for the human reader: tool-calling orchestration back near the top, honest RMSE bullet (no "statistical analysis"), one 4-bullet agent project.
+- **Fix in your files:** "AI Job Application Agent" lives only in `new_project_block.tex` (repo root, untracked) and this resume. Add it to `resumes/projects_bank.tex` so future tailoring can use it. Confirm "about 3 minutes" per application is measured.

@@ -35,3 +35,28 @@
 - DeepTruth: CI/CD bullet (commented out)
 - Cenovus: VMware integration bullet (commented out)
 - Research Asst.: ROS2-Gazebo simulation pipeline bullet (commented out)
+
+---
+
+# Revision 2 (2026-10-07): improve after re-review of the same JD
+
+Starting point: your hand edit that replaced MCP Chatbot with "AI Job Application Agent" (Oct 2026 – Present).
+
+| # | Section | Before | After | Why | Rule |
+|---|---|---|---|---|---|
+| R1 | Projects | Web Memory Assistant-AI (3 bullets) | MCP Chatbot-AI restored (3 bullets, same text as revision 1) | JD's first duty is agentic design / LLM orchestration and lists "LLM tool utilization"; PolicyRAG already covers retrieval and semantic search | Tweak 3 |
+| R2 | MCP Chatbot | Developed … (1st), Orchestrated … (2nd) | Orchestrated a tool-calling loop … (1st), Developed … (2nd) | Orchestration bullet is the most JD-relevant and has numbers | §5 |
+| R3 | AI Job Application Agent | 5 bullets incl. "Tracked every application in a Git-versioned CSV …" | CSV tracker bullet commented out (4 bullets) | 3–4 bullets per project; least ML-relevant | Tweak 1 |
+| R4 | AI Job Application Agent | {Claude Code, Python, LaTeX, Git, GitHub, Agent Skills} | {Claude Code, Agent Skills, Python, LaTeX, Git, GitHub} | Lead with agentic tooling (Kensho lists Claude Code) | Tweak 3 |
+| R5 | Research Asst. | Increased control accuracy by 60% via statistical analysis of RMSE and overshoot in Pandas across 15+ hardware trials. | Improved control-logic accuracy by 60% by computing RMSE and overshoot in Pandas and NumPy across 15+ hardware trials. | "statistical analysis" is not in resumes/; bank says "quantifying … with Pandas, NumPy … computing error metrics such as RMSE and overshoot" | Never-invent |
+| R6 | Cenovus | Collaborated … / Monitored … escalated … | Collaborate … / Monitor … escalates … | Present tense for a "Present" role | §3 |
+| R7 | Cleveland-Cliffs | Translated production data into Power BI dashboards … | Visualized production data in Power BI dashboards … | Stronger verb from the verb bank | §3 |
+
+## Skills changes (revision 2)
+- AI & ML: added Semantic Search; dropped Reinforcement Learning (still shown in the PPO bullet) to fit one line.
+- Programming: dropped React, Django (not in JD); added C.
+- ML Libraries & Data: added Ollama (MCP Chatbot), Google Colab (moved); dropped Power BI Dashboards (still in a bullet).
+- Developer Tools: dropped Cursor; added Linux CLI.
+
+## Removed (revision 2)
+- Web Memory Assistant project (swapped out, R1); Agent CSV-tracker bullet (R3).
