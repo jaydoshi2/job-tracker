@@ -1,0 +1,265 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{textcomp}
+\usepackage{newtxtext,newtxmath}
+\usepackage{hyperref}
+\usepackage{ulem}  
+
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+% Page setup
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.9in}
+\addtolength{\textheight}{1.4in}
+
+% Settings
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-4pt}}}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textbf{\small #2} \\
+        \textit{\small#3} & \textit{\small #4}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+        \small#1 & \textbf{\small #2}
+    \end{tabular*}\vspace{-9pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+% List settings
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+
+% Hyperlink settings
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\Huge \scshape Jay Doshi} \\ \vspace{3pt}
+    
+    \small
+ \begin{tabular}{l @{\hspace{0.5cm}} l @{\hspace{0.5cm}} l  @{\hspace{0.5cm}} l}
+     \href{mailto:Jay.Doshi@rockets.utoledo.edu}{\uline{Jay.Doshi@rockets.utoledo.edu}} & 
+    LinkedIn: \href{https://www.linkedin.com/in/jaydoshi1234/}{\uline{jaydoshi1234}} & 
+    GitHub: \href{https://github.com/jaydoshi2}{\uline{jaydoshi2}} & 
+     +1 (419) 215-4693
+     
+\end{tabular}
+\end{center}
+\vspace{-0.7cm}
+
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubItem{
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{B.Sc. in Computer Science \& Engineering} & \textbf{GPA: 3.7/4.0} \\
+    University of Toledo, Toledo, OH & Expected Graduation: December 2027 \\
+  \end{tabular*}
+}
+
+\resumeSubHeadingListEnd
+
+
+
+\vspace{-0.4cm}
+\vspace{3pt}
+\section{Experience}
+\resumeSubHeadingListStart
+
+
+\resumeSubheading
+{\textbf{Network Engineer Intern} \textnormal{\textbar\ Cenovus Energy, Oregon, OH}}{September 2026 -- Present}
+{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+\resumeItem{Analyze SolarWinds NPM metrics for root-cause analysis of performance degradation, resolving issues before production outages.}
+\vspace{0.15cm}
+\resumeItem{Debug connectivity defects and validate system integrations with cross-functional teams ahead of production deployments.}
+\vspace{0.15cm}
+% \resumeItem{Integrated server, VMware virtualized, and backup systems into stable hosting environments, ensuring high availability of applications supporting plant operations.}
+% \vspace{0.15cm}
+\resumeItemListEnd
+
+
+
+\resumeSubheading
+{\textbf{Process Automation Intern} \textnormal{\textbar\ Cleveland-Cliffs, Coatesville, PA}}{May 2026 -- August 2026}
+{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+
+\resumeItem{Deployed VB.NET microservices to a clustered QMS app, restoring TCP/IP data flow between PLCs and SQL Server in seconds.}
+
+\vspace{0.15cm}
+
+\resumeItem{Built ETL pipelines pulling live sensor data from legacy OpenVMS Alpha into SQL Server, cutting manual extraction by 40\%.}
+\vspace{0.15cm}
+
+
+\resumeItem{Automated real-time defect flagging by comparing live gauge data against plate specs, reducing defective plate escapes by 30\%.}
+% \vspace{0.15cm}
+
+
+% \resumeItem{Increased engineering and business decision efficiency by 50\% by developing Power BI dashboards integrated with SQL views and stored procedures to accelerate production data processing.}
+
+
+
+\vspace{0.15cm}
+\resumeItemListEnd
+\resumeSubheading
+{\textbf{IT Support Technician Level 2} \textnormal{\textbar\ University of Toledo, Toledo, OH}}{September 2025 -- May 2026}
+{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+
+\resumeItem{Resolved 40+ monthly IT tickets by troubleshooting Windows, hardware, software, and network issues, minimizing downtime.}
+
+\vspace{0.15cm}
+\resumeItem{Imaged and deployed 150+ Windows devices using CLI tools for BIOS updates, data backups, and software installation.}
+
+\vspace{0.15cm}
+
+\resumeItemListEnd
+
+\resumeSubheading
+{\textbf{Undergraduate Research Assistant} \textnormal{\textbar\ University of Toledo, Toledo, OH}}{May 2025 -- December 2025}
+{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+\resumeItem{Improved control accuracy by 60\% with Python scripts analyzing flight-test data from 15+ hardware trials to find failure patterns.}
+\vspace{0.15cm}
+\resumeItem{Reduced navigation error by 40\% by tuning a PID flight controller with simulation-driven testing in a ROS2-Gazebo digital twin.}
+\vspace{0.15cm}
+\resumeItem{Scripted Linux CLI tools for data collection, system configuration, and test logging across hardware and simulation environments.}
+\resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+
+\vspace{-0.4cm}
+\vspace{3pt}
+
+\section{Professional Projects}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{\textbf{Scalable Load Balancer} \textnormal{\textbar\ {HAProxy, Apache, PHP, MariaDB, Tailscale, Virtual Box}}}{August 2025 -- December 2025}{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+
+\resumeItem{Architected a three-node LAMP network with primary, backup, and HAProxy servers, sustaining 500+ users with zero downtime.}
+\vspace{0.15cm}
+\resumeItem{Engineered HAProxy routing and per-IP rate limiting, capping traffic at 200 req/sec while blocking abusive bursts.}
+\vspace{0.15cm}
+\resumeItem{Scripted rsync and database export/restore pipelines, cutting recovery time to under 5 minutes.}
+\vspace{0.15cm}
+\resumeItem{Implemented encrypted Tailscale mesh networking to eliminate public exposure and enforce authenticated node access.}
+\vspace{0.15cm}
+\resumeItemListEnd
+
+
+\resumeSubheading
+{\textbf{DeepTruth} \textnormal{\textbar\ {Python, React, MongoDB, GCP, AWS, PyTorch, DistilBERT, Gemini API}}}{January 2025 -- March 2025}{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+
+\resumeItem{Shipped the frontend on AWS Amplify and the backend on a GCP VM, then tested the application with 50+ end users.}
+\vspace{0.15cm}
+\resumeItem{Automated CI/CD deployment via GitHub Actions and GCP VMs, reducing manual release steps and improving consistency.}
+\vspace{0.15cm}
+\resumeItem{Built Python ETL pipeline with automated validation checks, improving data ingestion accuracy across 9,500+ records.}
+\vspace{0.15cm}
+    \resumeItem{Won RocketHacks 2025 for developing scalable AI fact-checking product used by 1,000+ users over a 6-month period.}
+\vspace{0.15cm}
+\resumeItemListEnd
+
+
+\resumeSubheading
+{\textbf{SkillBridge Learning Platform} \textnormal{\textbar\ {Django, PostgreSQL, REST APIs, JWT, AWS, NLP}}}{August 2024 -- December 2024}{}{}
+\vspace{-0.6cm}
+\resumeItemListStart
+
+\resumeItem{Designed PostgreSQL schemas with dimensional modeling, improving query performance and reporting speed by 80\%.}
+\vspace{0.15cm}
+\resumeItem{Reduced response time to under 15 seconds by designing microservices architecture integrating varied technologies across features.}
+\vspace{0.15cm}
+\resumeItem{Implemented JWT and Google OAuth authentication system, securing REST API endpoints and improving integration reliability.}
+\vspace{0.15cm}
+\resumeItem{Developed Gemini API-powered AI agent for auto-generating video transcripts and MCQs, reducing manual content creation effort.}
+\vspace{0.15cm}
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-0.4cm}
+\vspace{3pt}
+\section{Technical Skills}
+\resumeSubHeadingListStart
+\resumeSubItem{\textbf{Programming Languages}{: Java, Python, JavaScript, TypeScript, SQL, C++, C, R}}
+\vspace{4pt}
+
+\resumeSubItem{\textbf{Software Development}{: Data Structures \& Algorithms, Operating Systems, System Design, REST APIs, Unit Testing, CI/CD, Documentation, Agile/SCRUM}}
+\vspace{4pt}
+\resumeSubItem{\textbf{Frameworks \& Data Visualization}{: React, Django, Spring Boot, Power BI Dashboards, Tableau, Excel (PivotTables, Charts), Pandas, NumPy}}
+\vspace{4pt}
+\resumeSubItem{\textbf{Databases \& Cloud}{: PostgreSQL, MySQL, MongoDB, Firebase, AWS (Lambda, S3, EC2), Google Cloud Platform}}
+\vspace{4pt}
+\resumeSubItem{\textbf{Developer Tools}{: Git, GitHub Actions, Docker, Linux CLI, VS Code, Jupyter Notebook}}
+\resumeSubHeadingListEnd
+
+\end{document}
