@@ -1,0 +1,30 @@
+{"title": "Business Analyst Intern",
+ "required": [
+  {"term": "SQL", "aliases": ["SQL Server", "PostgreSQL", "MySQL"]},
+  {"term": "Power BI", "aliases": ["PowerBI"]},
+  {"term": "Dashboards", "aliases": ["dashboard"]},
+  {"term": "Data visualization", "aliases": ["visualization", "Tableau"]},
+  {"term": "Business requirements", "aliases": ["requirements", "technical specifications"]},
+  {"term": "Data analysis", "aliases": ["analyzed", "analyzing", "analytics", "insights"]},
+  {"term": "Process automation", "aliases": ["automated", "automation", "streamlined"]},
+  {"term": "Data integration", "aliases": ["ETL", "data ingestion", "integrated"]},
+  {"term": "Agile", "aliases": ["Agile Methodologies", "Scrum", "SCRUM"]},
+  {"term": "User acceptance testing", "aliases": ["UAT", "user testing", "acceptance testing"]},
+  {"term": "Source to target mapping", "aliases": ["STTM", "source-to-target", "source tables"]},
+  {"term": "KPIs", "aliases": ["KPI", "key performance indicators"]},
+  {"term": "AI agents", "aliases": ["AI agent", "agentic", "Agentic-AI"]},
+  {"term": "Data modeling", "aliases": ["star schema", "dimensional modeling", "semantic models"]}
+ ],
+ "preferred": [
+  {"term": "Databricks", "aliases": []},
+  {"term": "Snowflake", "aliases": []},
+  {"term": "Azure DevOps", "aliases": ["AzureDevOps", "ADO"]},
+  {"term": "Azure", "aliases": ["Microsoft Azure"]},
+  {"term": "User stories", "aliases": ["user story", "acceptance criteria"]},
+  {"term": "Excel", "aliases": ["PivotTables", "VLOOKUP"]},
+  {"term": "Documentation", "aliases": ["documented"]},
+  {"term": "Stakeholders", "aliases": ["stakeholder", "business users"]},
+  {"term": "Data validation", "aliases": ["validated", "validation", "data quality"]},
+  {"term": "Python", "aliases": []},
+  {"term": "Business process modeling", "aliases": ["process modeling", "workflow"]}
+ ]}
