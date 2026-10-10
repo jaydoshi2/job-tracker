@@ -13,3 +13,4 @@ One line per application. Per-bullet details are in each application's changes.m
 - 2026-10-07 · Sigma Computing — Software Engineering Intern · software · ATS 88→96 · 10 bullets edited · applications/2026-10-07_sigma-computing_software-engineering-intern
 - 2026-10-07 · Kensho — Machine Learning Engineer Intern · ai · ATS 94→94 · revision 2: 6 bullets edited, MCP Chatbot restored · applications/2026-10-06_kensho_machine-learning-engineer-intern
 - 2026-10-08 · Campbell's — Business Analyst Intern · datascience · ATS 68→79 · 15 bullets edited · applications/2026-10-08_campbell-s_business-analyst-intern
+- 2026-10-10 · Docusign — Software Engineer Intern · software · ATS 80→95 · 13 bullets edited · applications/2026-10-10_docusign_software-engineer-intern
