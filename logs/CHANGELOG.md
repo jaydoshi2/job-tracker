@@ -15,4 +15,4 @@ One line per application. Per-bullet details are in each application's changes.m
 - 2026-10-08 · Campbell's — Business Analyst Intern · datascience · ATS 68→79 · 15 bullets edited · applications/2026-10-08_campbell-s_business-analyst-intern
 - 2026-10-10 · Docusign — Software Engineer Intern · software · ATS 80→95 · 13 bullets edited · applications/2026-10-10_docusign_software-engineer-intern
 - 2026-10-12 · WEX — Software Engineering Intern · software · ATS 75→88 · 16 bullets edited · fill 98.9% · applications/2026-10-12_wex_software-engineering-intern
-- 2026-10-12 · Cyvl — Software Engineering Intern · software · ATS 78→98 · 19 bullets edited · fill 100% · applications/2026-10-12_cyvl_software-engineering-intern
+- 2026-10-12 · Cyvl — Software Engineering Intern - SWE/ML (Summer 2027) · software · ATS 76→93 · 19 bullets edited · fill 100% · applications/2026-10-12_cyvl_software-engineering-intern-swe-ml

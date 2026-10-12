@@ -1,4 +1,4 @@
-# Changes: Cyvl — Software Engineering Intern (base: software)
+# Changes: Cyvl — Software Engineering Intern - SWE/ML (Summer 2027) (base: software)
 
 | # | Section | Before | After | Why | Rule |
 |---|---|---|---|---|---|

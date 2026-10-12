@@ -1,11 +1,11 @@
-# Cyvl — Software Engineering Intern
+# Cyvl — Software Engineering Intern - SWE/ML (Summer 2027)
 
 - **Company:** Cyvl (Physical AI / Infrastructure Intelligence Platform)
-- **Role:** Software Engineering Intern
+- **Role:** Software Engineering Intern - SWE/ML (Summer 2027)
 - **Req ID:** (not listed)
 - **Location:** Somerville, MA
 - **Work mode:** On-site (~90% in office)
-- **Season:** (not stated; logged as Summer 2027)
+- **Season:** Summer 2027
 - **Source / URL:** (not given) · **Deadline:** (not listed)
 - **Pay:** (not listed)
 - **Sponsorship:** (not stated)
