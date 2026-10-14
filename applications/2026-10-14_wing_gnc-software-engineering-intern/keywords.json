@@ -1,0 +1,33 @@
+{"title": "GNC Software Engineering Intern",
+ "required": [
+  {"term": "C++", "aliases": ["CPP"]},
+  {"term": "Python", "aliases": ["Python3"]},
+  {"term": "Data structures", "aliases": ["Data Structures & Algorithms"]},
+  {"term": "Algorithms", "aliases": ["Algorithm Design"]},
+  {"term": "Linear algebra", "aliases": []},
+  {"term": "Optimization", "aliases": ["optimized", "trajectory optimization"]},
+  {"term": "Machine learning", "aliases": ["ML", "Supervised/Unsupervised Learning"]},
+  {"term": "Statistics", "aliases": ["statistical"]},
+  {"term": "Motion planning", "aliases": ["path planning", "navigation"]},
+  {"term": "State estimation", "aliases": ["Kalman filter", "Kalman Filtering", "sensor fusion"]},
+  {"term": "Flight control", "aliases": ["flight controller", "control logic", "PID", "controller"]},
+  {"term": "Simulation", "aliases": ["simulated", "Gazebo", "digital twin"]},
+  {"term": "Flight data analysis", "aliases": ["flight-test data", "flight data", "telemetry"]},
+  {"term": "Robotics", "aliases": ["robot", "ROS2", "ROS"]},
+  {"term": "Autonomous systems", "aliases": ["autonomous", "autonomy"]},
+  {"term": "Embedded software", "aliases": ["embedded", "Embedded Systems"]}
+ ],
+ "preferred": [
+  {"term": "Model Predictive Control", "aliases": ["MPC"]},
+  {"term": "Trajectory optimization", "aliases": ["trajectory"]},
+  {"term": "SLAM", "aliases": ["Simultaneous Localization and Mapping"]},
+  {"term": "Kalman filtering", "aliases": ["Kalman filter", "EKF"]},
+  {"term": "Geometric control", "aliases": []},
+  {"term": "Computer vision", "aliases": ["CV", "OpenCV"]},
+  {"term": "Vision-Language-Action", "aliases": ["VLA"]},
+  {"term": "PX4", "aliases": []},
+  {"term": "Drones", "aliases": ["drone", "UAV", "aerial"]},
+  {"term": "Hardware testing", "aliases": ["hardware trials", "hardware deployment", "flight tests"]},
+  {"term": "Safety-critical", "aliases": ["safety critical"]},
+  {"term": "Reinforcement learning", "aliases": ["RL", "PPO"]}
+ ]}
