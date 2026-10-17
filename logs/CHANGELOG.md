@@ -19,3 +19,4 @@ One line per application. Per-bullet details are in each application's changes.m
 - 2026-10-14 · Wing — GNC Software Engineering Intern · software · ATS 64→84 · 21 bullets edited · fill 98.6% · applications/2026-10-14_wing_gnc-software-engineering-intern
 - 2026-10-16 · Micron Technology — HVM Process Engineer Intern · datascience · ATS 70→87 · 20 bullets edited · fill 98.6% · applications/2026-10-16_micron-technology_hvm-process-engineer-intern
 - 2026-10-17 · Relling Systems — Controls Intern · software · ATS 83→98 · 20 bullets edited · fill 98.6% · applications/2026-10-17_relling-systems_controls-intern
+- 2026-10-17 · Aeromet — Image Processing Engineer Intern · ai · ATS 72→80 · 24 bullets edited · applications/2026-10-17_aeromet_image-processing-engineer-intern

@@ -1,0 +1,32 @@
+{"title": "Image Processing Engineer Intern",
+ "required": [
+  {"term": "Image Processing", "aliases": ["image processing", "OpenCV", "computer vision"]},
+  {"term": "Signal Processing", "aliases": ["signal processing", "sensor data"]},
+  {"term": "Python", "aliases": ["Python3"]},
+  {"term": "MATLAB", "aliases": ["Matlab"]},
+  {"term": "C++", "aliases": ["CPP"]},
+  {"term": "C", "aliases": []},
+  {"term": "Detection", "aliases": ["object detection", "detecting"]},
+  {"term": "Tracking", "aliases": ["object tracking", "tracking"]},
+  {"term": "Filtering", "aliases": ["spatial filtering", "temporal filtering", "Kalman Filtering"]},
+  {"term": "Interpolation", "aliases": []},
+  {"term": "Fourier Analysis", "aliases": ["FFT", "Fourier"]},
+  {"term": "Image Decomposition", "aliases": ["segmentation", "image segmentation"]},
+  {"term": "State Estimation", "aliases": ["Kalman", "parameter estimation"]},
+  {"term": "Object-Oriented Design", "aliases": ["OOP", "object-oriented"]},
+  {"term": "Software Lifecycle", "aliases": ["SDLC", "lifecycle", "CI/CD"]},
+  {"term": "Linux", "aliases": ["Linux CLI"]},
+  {"term": "Windows", "aliases": ["Windows OS"]}
+ ],
+ "preferred": [
+  {"term": "Docker", "aliases": ["containerized", "Docker Compose"]},
+  {"term": "Kubernetes", "aliases": ["k8s"]},
+  {"term": "Containerization", "aliases": ["containerized", "containers"]},
+  {"term": "GPU", "aliases": []},
+  {"term": "CUDA", "aliases": []},
+  {"term": "Machine Learning", "aliases": ["ML", "AI/ML", "deep learning"]},
+  {"term": "Computer Vision", "aliases": ["CV"]},
+  {"term": "PyTorch", "aliases": ["Torch"]},
+  {"term": "Optical Flow", "aliases": []},
+  {"term": "YOLO", "aliases": ["YOLOv8", "YOLOv5"]}
+ ]}
