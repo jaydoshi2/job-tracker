@@ -62,6 +62,8 @@ the number of Experience entries.
 - Reword to the JD's vocabulary only when it describes the same real work.
 - Remove a bullet by commenting it out with `% ` (and its paired `\vspace` line).
 - 2–4 bullets per Experience entry, 3–4 per project.
+- Don't leave anything as gaps if required information is missing in your files. Writing records, logging and pushing. Try to create a new bullet from the bank that fills the gap, and it's factually correct with the Project/Experience context. Don't keep the bottom empty; always fill it with relevant content from the bank. Use all the space available.
+- add bullet points for that expereince or project to add and compelte the gap but don't increase the vspace and create the more bullet points one, also the don't go till the end of the of line in latex becuase it creates another line for just one word. 
 
 **Tweak 2: Technical Skills**
 - Same number of lines, same LaTeX format; each line must fit on one line.
@@ -75,13 +77,16 @@ the number of Experience entries.
   `\resumeSubheading ... \resumeItemListEnd` block in the base file's format.
 - Order by JD relevance. Reorder each heading's tech list to lead with JD keywords, using
   only tech already listed for that project or named in its bullets.
+- Orient the project in sequential manner according to date it should start with the latest to oldest at the botoom
+- The chronological order of projects should be from latest to oldest, ensuring the most recent and relevant work is highlighted first.
 
 **Never:** add a skill, tool, number, employer, title or date not in my files (report
 missing required skills as Gaps; an honest 72 beats a fabricated 95) · estimate numbers ·
 keyword-stuff. When files disagree on a fact, use the base file's version and list it under
 "Fix in your files".
 LaTeX: escape `& % $ # _` as `\& \% \$ \# \_`; "~30%" → `$\sim$30\%`.
-Record every change as you go (before, after, why, rule) for Step 8.
+Record every change as you go (before, after, why, rule) for Step 8. 
+
 
 ## Step 6: Compile + lint until clean (max 5 rounds)
 ```

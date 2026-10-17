@@ -106,6 +106,9 @@ Worked on · Participated in · Involved in · Was · Utilized · Handled
 - Each keyword should appear once or twice on the page, not five times.
 - Lead each role with its most JD-relevant bullet. Recruiters often read only
   the first bullet of each entry.
+- Also, you can change the bullet points according to requriements dosen't necessary need to stick with 
+  same bullet point and change the words. 
+- Add and bullet points according to need
 
 ---
 
