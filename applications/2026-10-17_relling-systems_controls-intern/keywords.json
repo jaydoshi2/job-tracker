@@ -1,0 +1,26 @@
+{"title": "Controls Intern",
+ "required": [
+  {"term": "Controls", "aliases": ["control", "control logic", "controller", "control sequences", "Process Controls"]},
+  {"term": "Sensors", "aliases": ["sensor", "sensor interfaces", "sensor data"]},
+  {"term": "Electronics", "aliases": ["circuit", "Circuit Design", "Embedded Electronics", "transistor"]},
+  {"term": "Robotics", "aliases": ["robot", "robotic", "ROS2", "ROS 2"]},
+  {"term": "Testing", "aliases": ["tested", "test", "validated", "trials", "test plan"]},
+  {"term": "Hardware", "aliases": ["hardware trials", "physical hardware"]},
+  {"term": "Measurements", "aliases": ["measurement", "measured", "gauge"]},
+  {"term": "Troubleshooting", "aliases": ["troubleshoot", "fault", "faults", "debug", "debugging", "root-cause analysis"]},
+  {"term": "Commissioning", "aliases": ["cutovers", "production deployments", "integration"]},
+  {"term": "Documentation", "aliases": ["documented", "documenting"]}
+ ],
+ "preferred": [
+  {"term": "PID control", "aliases": ["PID"]},
+  {"term": "PLC", "aliases": ["PLCs"]},
+  {"term": "Embedded systems", "aliases": ["embedded", "Arduino"]},
+  {"term": "C++", "aliases": []},
+  {"term": "Python", "aliases": []},
+  {"term": "MATLAB", "aliases": []},
+  {"term": "Motors", "aliases": ["servo motors", "motor control", "motor driver"]},
+  {"term": "Simulation", "aliases": ["Gazebo", "digital twin", "simulated"]},
+  {"term": "Soldering", "aliases": ["soldered"]},
+  {"term": "Manufacturing", "aliases": ["plant", "mill", "factory", "production"]},
+  {"term": "Safety", "aliases": ["safe test procedures"]}
+ ]}
