@@ -7,7 +7,7 @@ Lint resume bullets against .claude/skills/tailor/references/bullet_guidelines.m
 
 --pdf uses the compiled resume.pdf next to the .tex and `pdftotext -layout` (poppler) to
 detect bullets that wrap onto a second line. Without pdftotext it falls back to a
-character budget (--max-chars, default 128 ≈ one line in an 11pt Times Jake-style template).
+rendered-width estimate (Times Roman glyph widths) instead of a raw character count.
 
 Supports `\\item ...` and macro bullets like Jake's template `\\resumeItem{...}`.
 Exit code 1 if any ERROR, else 0. Warnings never fail the run.
@@ -151,6 +151,38 @@ def wrapped_bullets_from_pdf(pdf, plain_bullets):
     return results
 
 
+# ---- Rendered-width measurement (Times Roman, 1/1000 em per glyph, ASCII 32-126) ----
+# Character counts are unreliable: on this template a 130-char bullet fits while a
+# 128-char one wraps, because capitals/m/w are ~2x wider than i/l/t. Measure width instead.
+_TIMES = [250, 333, 408, 500, 500, 833, 778, 333, 333, 333, 500, 564, 250, 333, 250, 278, 500, 500, 500, 500, 500, 500, 500, 500, 500, 500, 278, 278, 564, 564, 564, 444, 921, 722, 667, 667, 722, 611, 556, 722, 722, 333, 389, 722, 611, 889, 722, 722, 556, 722, 667, 556, 611, 722, 722, 944, 722, 722, 611, 333, 278, 333, 469, 500, 333, 444, 500, 444, 500, 444, 333, 500, 500, 278, 278, 500, 278, 778, 500, 500, 500, 500, 333, 389, 278, 500, 500, 722, 500, 500, 444, 480, 200, 480, 541]
+LINE_CAP = 53000      # calibrated on Jay's PDF: 52,960 fits on one line, 53,379 wraps
+SAFE_CAP = 52500      # above this a bullet is "tight": may wrap after small edits
+FILL_MIN = 0.85       # a wrapped bullet's 2nd line must be at least 85% full
+AVG_CHAR = 430        # average glyph width, used to turn width into "about N characters"
+
+
+def text_width(s):
+    return sum(_TIMES[ord(c) - 32] if 32 <= ord(c) <= 126 else 500 for c in s)
+
+
+def fit_check(plain):
+    """Return (level, message) or None. Rule: ONE full line, or TWO full lines, never an orphan."""
+    w = text_width(plain)
+    if w <= LINE_CAP:
+        if w > SAFE_CAP:
+            return ("warn", f"tight fit ({w/LINE_CAP:.0%} of line); may wrap after small edits")
+        return None
+    fill = (w - LINE_CAP) / LINE_CAP
+    if fill > 1:
+        return ("error", f"wraps to 3 lines; split into two bullets")
+    if fill >= FILL_MIN:
+        return None   # genuinely uses both lines: allowed
+    cut = max(1, round((w - SAFE_CAP) / AVG_CHAR))
+    add = max(1, round((LINE_CAP * (1 + FILL_MIN) - w) / AVG_CHAR))
+    return ("error", f"orphan 2nd line only {fill:.0%} full; cut 1–2 words (≥{cut} chars) to fit one line "
+                     f"(preferred) or add ~{add} chars of real content to fill line 2")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("tex")
@@ -193,8 +225,10 @@ def main():
             with_metric += 1
         else:
             warnings.append(f"{tag}: no number or scope; add one if the experience bank has it")
-        if not a.pdf and len(plain) > a.max_chars:
-            errors.append(f"{tag}: {len(plain)} chars > {a.max_chars}; likely wraps to 2 lines")
+        if not a.pdf:
+            fc = fit_check(plain)
+            if fc:
+                (errors if fc[0] == "error" else warnings).append(f"{tag}: {fc[1]}")
 
     for verb, c in openers.items():
         if c > 2:
@@ -210,13 +244,25 @@ def main():
             warnings.append("pdftotext not installed; using character budget instead (install poppler)")
             for n, b in enumerate(bullets, 1):
                 plain = to_plain(b)
-                if not is_label_line(plain) and len(plain) > a.max_chars:
-                    errors.append(f"[{n}] \"{plain[:55]}…\": {len(plain)} chars > {a.max_chars}; likely wraps")
+                fc = None if is_label_line(plain) else fit_check(plain)
+                if fc:
+                    (errors if fc[0] == "error" else warnings).append(f"[{n}] \"{plain[:55]}…\": {fc[1]}")
         else:
             plains = [to_plain(b) for b in bullets if not is_label_line(to_plain(b))]
+            full = {p[:60]: p for p in plains}
             for text, nlines in wrapped_bullets_from_pdf(pdf, plains):
-                if nlines > 1:
-                    errors.append(f"\"{text}…\" wraps to {nlines} lines in the PDF; trim it to one line")
+                fc = fit_check(full.get(text, text))
+                if nlines > 2:
+                    errors.append(f"\"{text}…\" wraps to {nlines} lines in the PDF; split it")
+                elif nlines == 2:
+                    w = text_width(full.get(text, text))
+                    fill = max(0.0, (w - LINE_CAP) / LINE_CAP)
+                    if fill < FILL_MIN:
+                        cut = max(1, round((w - SAFE_CAP) / AVG_CHAR))
+                        errors.append(f"\"{text}…\" wraps with an orphan 2nd line (~{fill:.0%} full); "
+                                      f"cut 1–2 words (≥{cut} chars) to fit one line, or add real content to fill line 2")
+                elif fc and fc[0] == "warn":
+                    warnings.append(f"\"{text}…\": {fc[1]}")
                 elif nlines == -1:
                     warnings.append(f"\"{text}…\" couldn't be located in the PDF; check its length by eye")
 

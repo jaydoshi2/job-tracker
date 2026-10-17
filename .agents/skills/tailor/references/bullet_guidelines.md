@@ -35,19 +35,27 @@ team size, number of services, frequency, or who adopted it.
 
 ---
 
-## 2. One line per bullet 🔒
+## 2. One full line, or two full lines. Never an orphan 🔒
 
-- Every bullet must render on **exactly one line** in the PDF. A wrapped bullet with
-  a lonely 2–3 word second line wastes vertical space and looks unpolished.
-- Target length: about 120–128 characters of plain text for an 11pt Times Jake-style template
-  (fewer for wider fonts). `preview_build.py` + `lint_bullets.py --pdf` measure the real wrap.
-- If it wraps, cut in this order:
-  1. Filler words (`successfully`, `various`, `in order to` → `to`).
-  2. Redundant context ("for the company's internal team" → "for 12 engineers").
-  3. Long tool names (shorten "Amazon Web Services" to "AWS").
-  4. A secondary clause. Keep the verb, the tech, and the number.
+- Default: every bullet renders on **exactly one line** in the PDF.
+- A bullet may use **two lines only if the second line is at least 85% full**.
+  A wrapped bullet with a lonely 1–5 word second line is never acceptable.
+- Character counts lie. On this template a 130-char bullet fits while a 128-char one
+  wraps, because capitals, `m` and `w` are about twice as wide as `i`, `l` and `t`.
+  `lint_bullets.py` measures rendered width (Times Roman glyph widths) and reports the
+  exact fix: how many characters to cut, or how many to add.
+- **When a bullet spills onto a second line, fix it in this order:**
+  1. **Cut 1–2 words** so it fits on one line (preferred). Remove, in order: filler
+     (`successfully`, `various`, `in order to` → `to`), redundant qualifiers
+     (`production outages` → `outages`), long names (`Amazon Web Services` → `AWS`),
+     then a secondary clause. Keep the verb, the tech, and the number.
+  2. **Or fill the second line completely** (85%+) with real content from the bank for
+     the same employer/project: a number, the tool used, the scope, or the result.
+     Never pad with filler and never invent facts to fill space.
+- Aim one-line bullets at 90–99% of the line; "tight fit" warnings (99–100%) mean the
+  bullet may wrap after a tiny edit, so trim a word if an easy one exists.
 - Never shrink the font, margins, or line spacing to make bullets fit.
-- If one achievement genuinely needs two lines, it's two achievements: split it.
+- If one achievement genuinely needs more than two lines, it's two achievements: split it.
 
 ---
 
@@ -106,9 +114,6 @@ Worked on · Participated in · Involved in · Was · Utilized · Handled
 - Each keyword should appear once or twice on the page, not five times.
 - Lead each role with its most JD-relevant bullet. Recruiters often read only
   the first bullet of each entry.
-- Also, you can change the bullet points according to requriements dosen't necessary need to stick with 
-  same bullet point and change the words. 
-- Add and bullet points according to need
 
 ---
 
@@ -153,7 +158,7 @@ Worked on · Participated in · Involved in · Was · Utilized · Handled
 
 ## 9. Change log format (required for every edited bullet)
 
-Every bullet you change goes into `$APP/changes.md` with the reason and the rule:
+Every bullet you change goes into the reply's change table with the reason and the rule:
 
 ```
 | # | Section | Before | After | Why | Rule |
@@ -162,7 +167,7 @@ Every bullet you change goes into `$APP/changes.md` with the reason and the rule
 | 2 | Projects | Worked on campus app | Built a React + Node.js app used by 600+ students | Banned opener, no metric | §3, §4 |
 ```
 
-Also list bullets **removed** (and why) and **added from the bank**. This log is how
+Also list bullets **removed** (and why) and **added from the bank**. This table is how
 I audit that nothing was invented.
 
 ---
