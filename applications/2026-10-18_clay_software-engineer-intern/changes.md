@@ -20,6 +20,7 @@
 - Databases & Cloud: PostgreSQL first; AWS expanded to (Lambda, S3, EC2, CloudWatch).
 - Software Development: REST APIs, System Design first.
 - Developer Tools: added GitHub Actions, Docker, Claude Code; dropped MATLAB.
+- Developer Tools: added Netlify at the user's explicit request (2026-10-18). It is not in any master resume.
 
 ## Projects swapped
 - Removed PulseChat Application (Java/Spring Boot, least JD-relevant).
