@@ -16,7 +16,7 @@ Statuses: Applied, OA, Recruiter Screen, Interview, Final Round, Offer, Accepted
 2. Find the row: `python3 scripts/tracker.py list` (if several match, use role or ask).
 3. `python3 scripts/tracker.py update --id <ID> --status "<Status>" --notes "<short note>"`
    (notes are appended with today's date).
-4. `git commit -am "status: <Company> → <Status>" && git push`
+4. No commit: `tracker/` is gitignored (private). Never push application data.
 5. Reply in one line. For OA/Interview, offer to prep me from that application's `jd.md` and `changes.md`.
 
 **Review** (empty input, "summary", "pipeline", or "due"):

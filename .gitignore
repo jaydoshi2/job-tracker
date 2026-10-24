@@ -10,3 +10,9 @@ __pycache__/
 .DS_Store
 .claude/settings.local.json
 *.preview.*
+
+# Private: my applications stay local, never pushed to the public repo
+applications/
+tracker/
+logs/
+applications.csv

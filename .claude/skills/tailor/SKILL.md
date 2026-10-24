@@ -1,6 +1,6 @@
 ---
 name: tailor
-description: Tailor my resume to a job description and log the application. Picks the right base resume (AI, Data Science, Network or Software), scores it ATS-style before and after, tweaks only bullets, Technical Skills and Projects (layout locked, one-line STAR/XYZ bullets), compiles it, logs the job as Applied in tracker/applications.csv, and commits + pushes to GitHub. Use whenever I paste a job description or job URL, even without saying /tailor. Pasting a JD means I have applied.
+description: Tailor my resume to a job description and log the application. Picks the right base resume (AI, Data Science, Network or Software), scores it ATS-style before and after, tweaks only bullets, Technical Skills and Projects (layout locked, one-line STAR/XYZ bullets), compiles it, logs the job as Applied in tracker/applications.csv (kept local and private). Use whenever I paste a job description or job URL, even without saying /tailor. Pasting a JD means I have applied.
 argument-hint: "<job description text or URL>  [just check]"
 ---
 
@@ -140,13 +140,11 @@ python3 scripts/tracker.py add --company "..." --role "..." --req-id "..." --loc
 ```
 (Status defaults to Applied, date = today, follow-up = +14 days.)
 
-## Step 10: Commit + push
-```
-git add "$APP" tracker/applications.csv logs/CHANGELOG.md
-git commit -m "applied: <Company> — <Role> (<track>, ATS <before>→<after>)"
-git push
-```
-Push fails → keep the local commit and tell me the fix in one line.
+## Step 10: Keep it private (no commit)
+`applications/`, `tracker/` and `logs/` are gitignored because the repo is public: they stay
+on my machine only. Don't `git add` them and don't commit or push anything for an application.
+Only commit + push when tracked files changed (skills, scripts, masters I asked to update),
+with a message that names no company.
 
 ## Step 11: Reply in exactly this shape
 ```
@@ -158,5 +156,5 @@ Coursework: <courses picked, in order>
 Gaps: <missing required skills or "none">
 Fix in your files: <conflicts, only if any>
 PDF: $APP/resume.pdf  (or: "compile $APP/resume.tex in Overleaf", if build used preview)
-Commit: <short sha> pushed
+Saved locally (private, not pushed)
 ```

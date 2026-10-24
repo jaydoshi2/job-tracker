@@ -1,7 +1,7 @@
 # Job Applications: Summer 2027
 
 Pasting a job description = I applied. Run the `tailor` skill automatically: pick the base
-resume, tweak bullets/skills/projects, compile, log as Applied, commit and push.
+resume, tweak bullets/skills/projects, compile, log as Applied (locally; never pushed).
 
 ## Commands
 - Paste a JD (or `/tailor <JD>`): full pipeline. Add "just check" to skip logging.
@@ -20,4 +20,5 @@ resume, tweak bullets/skills/projects, compile, log as Applied, commit and push.
 - Never invent skills, numbers, titles, dates or employers. Only use what's in `resumes/`.
 - Keep my layout. Only bullets, Technical Skills and Projects change.
 - Every bullet one line; resume exactly one page; never shrink margins/fonts.
-- Commit + push after every application or status change.
+- The repo is public: `applications/`, `tracker/`, `logs/` are gitignored. Never commit
+  or push them or put company names in commit messages.
