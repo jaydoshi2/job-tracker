@@ -50,7 +50,8 @@ Read `.claude/skills/tailor/references/bullet_guidelines.md` first.
 **The bank** = every bullet, project and skill in ALL files in `resumes/` (the four resumes
 + `projects_bank.tex`), including commented-out `% \resumeItem{...}` lines and blocks.
 
-**Locked, never change:** preamble, header, Education, section order and headings, every
+**Locked, never change:** preamble, header, Education (except its Relevant Coursework line,
+see Tweak 4), section order and headings, every
 `\vspace`, macros, employer names, job titles and dates (exactly as in the base file), and
 the number of Experience entries.
 
@@ -85,6 +86,26 @@ missing required skills as Gaps; an honest 72 beats a fabricated 95) · estimate
 keyword-stuff. When files disagree on a fact, use the base file's version and list it under
 "Fix in your files".
 LaTeX: escape `& % $ # _` as `\& \% \$ \# \_`; "~30%" → `$\sim$30\%`.
+**Tweak 4: Relevant Coursework** (Education, do this every time without being asked)
+- Source: the `	extbf{Relevant Coursework:}` list in `resumes/projects_bank.tex`, plus any
+  course already named in the base file's coursework line. Copy exact names; never invent
+  or rename a course.
+- Pick courses matching the JD's required skills first, then preferred, most relevant first.
+  Examples: controls/robotics → Calculus, Linear Algebra, Probability and Statistics,
+  Stochastic Processes, Kalman Filtering; network/IT → Operating Systems and Systems
+  Programming, Fundamentals of Cybersecurity, Computer Architecture and Organization, IoT;
+  data → Database Management Systems, SQL, Probability and Statistics, Linear Algebra;
+  AI/ML → Artificial Intelligence, Linear Algebra, Probability and Statistics; software →
+  Data Structures, Object-Oriented Programming, Software Engineering, Full-Stack Web Development.
+- Skip general-education courses (Sociology, Geography, Microeconomics, Indian Constitution,
+  English Composition, Chemistry, etc.) unless the JD asks for that subject, and skip a
+  course that only repeats a broader one already listed.
+- Exactly ONE line, filled to 80–100% (about 5–8 courses). If it wraps, drop the least
+  relevant course; never shorten names.
+- Keep the base file's LaTeX wrapper and `space`; only the course list changes.
+- If the page spills to two pages, comment out the least relevant bullet, not the coursework.
+- Record the chosen courses and why in `changes.md` under "Coursework".
+
 Record every change as you go (before, after, why, rule) for Step 8. 
 
 
@@ -96,6 +117,7 @@ python3 scripts/lint_bullets.py <LINT TARGET printed by build> --pdf
 - Build exit 1 → fix the LaTeX error. Exit 2 → comment out the least relevant bullet.
 - "wraps to 2 lines" → trim: filler → extra context → long names → secondary clause; keep verb, tech, number.
 - Banned opener / -ing verb / pronoun / opener used 3+ times / escaping → fix as stated.
+- Relevant Coursework wraps to 2 lines → drop the least relevant course.
 - Missing-number warnings → fix only if my files have the number.
 Never change margins, font size or spacing.
 
@@ -104,7 +126,7 @@ Same as Step 4 on `$APP/resume.tex` → ATS_AFTER. If it dropped, recheck your e
 
 ## Step 8: Write records
 - `$APP/changes.md`: table `| # | Section | Before | After | Why | Rule |` for every edited
-  bullet, then "Skills changes", "Projects swapped", "Removed".
+  bullet, then "Skills changes", "Projects swapped", "Coursework", "Removed".
 - `$APP/ats_report.md`: ATS before → after, base track, keywords added, Gaps, Fix in your files.
 - Append to `logs/CHANGELOG.md`:
   `- <YYYY-MM-DD> · <Company> — <Role> · <track> · ATS <before>→<after> · <n> bullets edited · <APP>`
@@ -132,6 +154,7 @@ Push fails → keep the local commit and tell me the fix in one line.
 ATS: <before> → <after> · required <x>/<y> · lint: <errors> errors, <warnings> warnings
 Changes: <3–6 one-line bullets>
 Skills: <moved/added/removed>   Projects: <kept/swapped>
+Coursework: <courses picked, in order>
 Gaps: <missing required skills or "none">
 Fix in your files: <conflicts, only if any>
 PDF: $APP/resume.pdf  (or: "compile $APP/resume.tex in Overleaf", if build used preview)
