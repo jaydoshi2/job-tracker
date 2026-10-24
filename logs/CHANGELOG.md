@@ -21,3 +21,4 @@ One line per application. Per-bullet details are in each application's changes.m
 - 2026-10-17 · Relling Systems — Controls Intern · software · ATS 83→98 · 20 bullets edited · fill 98.6% · applications/2026-10-17_relling-systems_controls-intern
 - 2026-10-17 · Aeromet — Image Processing Engineer Intern · ai · ATS 72→80 · 24 bullets edited · applications/2026-10-17_aeromet_image-processing-engineer-intern
 - 2026-10-18 · Clay — Software Engineer Intern · software · ATS 74→79 · 11 bullets edited · applications/2026-10-18_clay_software-engineer-intern
+- 2026-10-24 · KLA — Digital Twin Engineering Apps Intern · software · ATS 78→82 · 16 bullets edited · applications/2026-10-24_kla_digital-twin-engineering-apps-intern
